@@ -75,6 +75,3 @@ There is more:
  * Learn to distinguish the different flavours of test doubles: [dummy, fake, stub, spy and mock](https://martinfowler.com/bliki/TestDouble.html). Unlike common believe not everything is a mock. If you use Mockito check [this](https://www.javaworld.com/article/2074508/core-java/mocks-and-stubs---understanding-test-doubles-with-mockito.html).
  * Familiarise yourself with the SOLID principles. [This course](https://app.pluralsight.com/library/courses/encapsulation-solid/table-of-contents) is great.
  * Learn your editor's features and shortcuts so your train of thought gets interrupted as little as possible.
-
----
-> built with ❤️ by [mamachanko](https://github.com/mamachanko/guides)

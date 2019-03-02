@@ -37,5 +37,3 @@ Pair and mob programming eliminates the the majority of [wastes in software deve
  * [Mobbing timer](http://mobster.cc/)
  * [Pomodoro timer](http://pomodoro.cfapps.io)
  
----
-> built with ❤️ by [mamachanko](https://github.com/mamachanko/guides)
