@@ -2,6 +2,8 @@
 
 cd $(dirname $0)
 
+yarn
+
 pushd tdd
     npx showdown \
 	    makehtml \
@@ -11,7 +13,7 @@ pushd tdd
     jq -n \
         --arg title tdd \
         '{title: $title}' \
-    | npx mustache@3.0.1 \
+    | npx mustache \
         -p content.mustache \
         - \
         ../base.mustache \
@@ -27,7 +29,7 @@ pushd pairing
     jq -n \
         --arg title pairing \
         '{title: $title}' \
-    | npx mustache@3.0.1 \
+    | npx mustache \
         -p content.mustache \
         - \
         ../base.mustache \
@@ -43,7 +45,7 @@ pushd stories
     jq -n \
         --arg title stories \
         '{title: $title}' \
-    | npx mustache@3.0.1 \
+    | npx mustache \
         -p content.mustache \
         - \
         ../base.mustache \

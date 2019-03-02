@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "mustache": "^3.0.1",
+    "showdown": "^1.9.0"
+  }
+}
