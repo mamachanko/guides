@@ -1,0 +1,73 @@
+<h1 id="mamachankogithubcommamachankospocketsizedtddguide"><a href="github.com/mamachanko">mamachanko</a>'s pocket-sized TDD guide</h1>
+<blockquote>
+  <p><strong>tl;dr</strong></p>
+  <ul>
+  <li>write a failing test from the outside in</li>
+  <li>make it pass</li>
+  <li>refactor towards good design</li>
+  <li>take a break and repeat</li>
+  </ul>
+</blockquote>
+<h2 id="whyyouwanttests">Why you want tests</h2>
+<blockquote>
+  <p>TODO why?</p>
+</blockquote>
+<h2 id="fromredtogreentogreat">From red to green to great</h2>
+<h3 id="redwriteafailingtest">Red / Write a failing test</h3>
+<ul>
+<li>Write a single failing test at a time.</li>
+<li>Stick to the <a href="http://wiki.c2.com/?ArrangeActAssert">AAA pattern</a>:</li>
+<li><em>Arrange</em> the subject under test and all required inputs</li>
+<li><em>Act</em> on the subject under test</li>
+<li><em>Assert</em> the expected outputs</li>
+<li>If it is hard to test, its design probably needs improvement. Pay attention to your resistance. When writing the test is painful it is telling you something.</li>
+<li><a href="http://blog.ploeh.dk/2013/03/04/outside-in-tdd-versus-ddd/">Test from the outside in.</a></li>
+<li>Treat the subject under test a black box. We can only control its inputs and observe its outputs. If something is not observable it is irrelevant. </li>
+<li>Test the public interface of the unit under test.</li>
+<li>Do not test private methods.</li>
+<li><a href="http://blog.ploeh.dk/2013/10/23/mocks-for-commands-stubs-for-queries/">Use mocks for commands and stubs for queries.</a></li>
+<li>Favour pure functions over everything else. Pure functions are the testable by design. A function is pure if it always produces the same output for a given input and has no side-effects.</li>
+<li>If you're testing a Spring application's endpoints you will want to work <a href="https://gist.github.com/mamachanko/32d6d4cbb0af1916f2eddb642545b5f9">these</a> annotations.</li>
+<li>You must have seen it a test fail to trust it.</li>
+<li>Run all the tests in your test class together. </li>
+<li>End the day with a failing test. Tomorrow you will know exactly where to pick up. </li>
+</ul>
+<h3 id="greenmakeitpass">Green / Make it pass</h3>
+<p>Do the simplest thing to get the failing test to green.</p>
+<blockquote>
+  <p>TODO more here. but what?</p>
+</blockquote>
+<p><a href="https://softwareengineering.stackexchange.com/questions/354384/when-do-you-write-the-real-code-in-tdd">"But when do write the <em>real code</em>?"</a></p>
+<h3 id="greatrefactor">Great / Refactor</h3>
+<p>Refactor to improve the code. Since your details make no assumptions about the internals of your class you are free to refactor
+to your heart's content. Keep running the tests often to make sure you haven't left the green track.</p>
+<p>Ask yourself these questions:</p>
+<ul>
+<li>Is it DRY?</li>
+<li>Does it have one and only one responsibility? In other words, there should be only one reason for a thing to change.</li>
+<li>Does everything inside change at the same rate?</li>
+<li>Does my class depend on things that change less often than itself does?</li>
+<li>Is there a clean separation between <em>commands</em> and <em>queries</em> - <a href="https://martinfowler.com/bliki/CommandQuerySeparation.html">CQS</a>?</li>
+</ul>
+<p>Now you should probably take a break. Breaks are like water. You should have it before you need it. There are methods
+and tools to facilitate a sustainable pace. The most popular one is <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro</a>.
+<a href="https://pomodoro.cfapps.io/">Here</a>'s the timer <a href="https://github.com/mamachanko/pomodoro">I built</a>, but there are many many others.</p>
+<h2 id="whenitimpedesprogress">When it impedes progress</h2>
+<blockquote>
+  <p>TODO discuss speed "it slows me down!"</p>
+</blockquote>
+<h2 id="investinthis">Invest in this:</h2>
+<p>Here a few seminal articles and talks to get you started:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=v-2yFMzxqwU">SOLID Object-oriented design</a> - Sandi Metz</li>
+<li><a href="https://martinfowler.com/articles/mocksArentStubs.html">Mocks aren't stubs</a> - Martin Fowler</li>
+<li><a href="https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html">The Little Mocker</a> - Robert C. Martin
+There is more:</li>
+<li>In general, listen to what <a href="https://www.sandimetz.com/">Sandi Metz</a>, <a href="https://blog.thecodewhisperer.com/">J.B. Rainsberger</a> and <a href="http://blog.ploeh.dk">Mark Seemann</a> are saying.</li>
+<li><a href="https://online-training.jbrains.ca/p/wbitdd-01">The World's Best Intro to TDD</a></li>
+<li><a href="https://www.oreilly.com/library/view/test-driven-development/0321146530/">Test-Driven Development by Example</a> - Kent Beck</li>
+<li><a href="https://www.poodr.com/">Practical object-oriented design</a></li>
+<li>Learn to distinguish the different flavours of test doubles: <a href="https://martinfowler.com/bliki/TestDouble.html">dummy, fake, stub, spy and mock</a>. Unlike common believe not everything is a mock. If you use Mockito check <a href="https://www.javaworld.com/article/2074508/core-java/mocks-and-stubs---understanding-test-doubles-with-mockito.html">this</a>.</li>
+<li>Familiarise yourself with the SOLID principles. <a href="https://app.pluralsight.com/library/courses/encapsulation-solid/table-of-contents">This course</a> is great.</li>
+<li>Learn your editor's features and shortcuts so your train of thought gets interrupted as little as possible.</li>
+</ul>

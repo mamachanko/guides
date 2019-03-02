@@ -1,0 +1,28 @@
+---
+defaults: &defaults
+  buildpacks:
+    - staticfile_buildpack
+  instances: 1
+  memory: 64M
+  disk: 64M
+
+applications:
+
+  - name: tdd-guide
+    path: ./tdd
+    routes:
+      - route: tdd.cfapps.io
+      - route: test-driven.cfapps.io
+      - route: test-driven-development.cfapps.io
+    <<: *defaults
+
+  - name: pairing-guide
+    path: ./pairing
+    routes:
+      - route: pairing.cfapps.io
+      - route: pairprogramming.cfapps.io
+      - route: pair-programming.cfapps.io
+      - route: mobbing.cfapps.io
+      - route: mobprogramming.cfapps.io
+      - route: mob-programming.cfapps.io
+    <<: *defaults
