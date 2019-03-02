@@ -1,4 +1,4 @@
-A few guides I am working on.
+A few topical guides I keep working on.
 
 > https://tdd.cfapps.io
 
