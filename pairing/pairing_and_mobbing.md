@@ -2,12 +2,17 @@
 
 ```
 tl;dr
-    better software through [the whole team|two engineers] working on the same thing, at the same time, in the same space, and at the same computer.
+    🖥️👨🏽‍🎨👩🏻‍🔧
+    => better 🌍
 ```
+
+Two people or more people working on the same thing, at the same time, in the same space, and at the same computer.
 
 ## Why would I want that?
 
 > Work that is worth doing is worth doing together.
+
+It produces better software.
 
 Pair and mob programming eliminates the the majority of [wastes in software development](https://www.researchgate.net/publication/313360479_Software_Development_Waste). In particular:
  * rework
