@@ -22,6 +22,10 @@ Pair and mob programming eliminates the the majority of [wastes in software deve
  * knowledge loss
  * ineffective communication 
 
+## "But it makes us go so slow"
+(TODO)
+when you feel that it makes you go slow (maybe because of different skill levels and experience), then not pairing cannot be the solution 
+
 ## There's more 
  * [Mobbing Cheat Sheet](https://docs.google.com/document/d/1Ve5LVAJvGqJbUZR6C2o3ZNvFPKpuJ6sfIwxlpgKpKCk/export?format=pdf)
  * [Joseph Moore's talk on pairing (... a lot)](https://www.youtube.com/watch?v=156LdcEjfhs)
