@@ -33,3 +33,19 @@ pushd pairing
         ../base.mustache \
         > index.html
 popd
+
+pushd stories
+    npx showdown \
+	    makehtml \
+	    -i stories.md \
+	    -o content.mustache
+
+    jq -n \
+        --arg title stories \
+        '{title: $title}' \
+    | npx mustache@3.0.1 \
+        -p content.mustache \
+        - \
+        ../base.mustache \
+        > index.html
+popd

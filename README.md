@@ -4,6 +4,8 @@ A few guides I am working on.
 
 > https://pairing.cfapps.io
 
+> https://stories.cfapps.io
+
 ```bash
 ./build.sh && ./deploy.sh
 ```

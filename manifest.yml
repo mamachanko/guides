@@ -26,3 +26,13 @@ applications:
       - route: mobprogramming.cfapps.io
       - route: mob-programming.cfapps.io
     <<: *defaults
+
+  - name: story-guide
+    path: ./stories
+    routes:
+      - route: story.cfapps.io
+      - route: story-writing.cfapps.io
+      - route: user-stories.cfapps.io
+      - route: technical-stories.cfapps.io
+      - route: chores.cfapps.io
+    <<: *defaults

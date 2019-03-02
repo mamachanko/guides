@@ -2,4 +2,5 @@
 
 open \
     tdd/index.html \
-    pairing/index.html
+    pairing/index.html \
+    stories/index.html
