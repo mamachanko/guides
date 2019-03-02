@@ -13,7 +13,7 @@ tl;dr
 > TODO why?
 
 ## From red to green to great
-### Red / Write a failing test
+### Write a failing test ❌
  * Write a single failing test at a time.
  * Stick to the [AAA pattern](http://wiki.c2.com/?ArrangeActAssert):
    * _Arrange_ the subject under test and all required inputs
@@ -31,7 +31,7 @@ tl;dr
  * Run all the tests in your test class together. 
  * End the day with a failing test. Tomorrow you will know exactly where to pick up. 
  
-### Green / Make it pass
+### Make it pass ✅
 
 Do the simplest thing to get the failing test to green.
 
@@ -39,7 +39,7 @@ Do the simplest thing to get the failing test to green.
 
 ["But when do write the _real code_?"](https://softwareengineering.stackexchange.com/questions/354384/when-do-you-write-the-real-code-in-tdd)
 
-### Great / Refactor
+### Refactor ♻️
 Refactor to improve the code. Since your details make no assumptions about the internals of your class you are free to refactor
 to your heart's content. Keep running the tests often to make sure you haven't left the green track.
 
@@ -57,11 +57,11 @@ and tools to facilitate a sustainable pace. The most popular one is [Pomodoro](h
 ## When it impedes progress
 > TODO discuss speed "it slows me down!"
 
-## Invest in this:
+## Invest in yourself
  * [The World's Best Intro to TDD](https://online-training.jbrains.ca/p/wbitdd-01)
  * [Testing Javascript](https://testingjavascript.com/)
 
-## Watch and read this:
+## There's more
 Here a few seminal articles and talks to get you started:
  * cyclomatic complexity (TODO)
  * builders, fixtures, etc. patterns, constructor violates dry and encapsulation (TODO)
