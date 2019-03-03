@@ -1,6 +1,6 @@
 #!/usr/bin/env bash -ex
 
 open \
-    tdd/index.html \
-    pairing/index.html \
-    stories/index.html
+    dist/tdd/index.html \
+    dist/pairing/index.html \
+    dist/stories/index.html

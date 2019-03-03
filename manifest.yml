@@ -9,7 +9,7 @@ defaults: &defaults
 applications:
 
   - name: tdd-guide
-    path: ./tdd
+    path: ./dist/tdd
     routes:
       - route: tdd.cfapps.io
       - route: test-driven.cfapps.io
@@ -17,7 +17,7 @@ applications:
     <<: *defaults
 
   - name: pairing-guide
-    path: ./pairing
+    path: ./dist/pairing
     routes:
       - route: pairing.cfapps.io
       - route: pairprogramming.cfapps.io
@@ -28,7 +28,7 @@ applications:
     <<: *defaults
 
   - name: story-guide
-    path: ./stories
+    path: ./dist/stories
     routes:
       - route: story.cfapps.io
       - route: story-writing.cfapps.io
