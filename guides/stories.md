@@ -1,4 +1,6 @@
-# [WIP] stories 
+(this is under heavy construction)
+
+# stories 
 
 * outcomes, outcomes, outcomes
 * people struggle to detach themselves from the implementation
