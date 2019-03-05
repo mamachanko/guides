@@ -8,6 +8,15 @@ defaults: &defaults
 
 applications:
 
+  - name: xp-guide
+    path: ./dist/xp
+    routes:
+      - route: xp.cfapps.io
+      - route: xp-practices.cfapps.io
+      - route: xtreme-programming.cfapps.io
+      - route: extreme-programming.cfapps.io
+    <<: *defaults
+
   - name: tdd-guide
     path: ./dist/tdd
     routes:
@@ -35,4 +44,15 @@ applications:
       - route: user-stories.cfapps.io
       - route: technical-stories.cfapps.io
       - route: chores.cfapps.io
+    <<: *defaults
+
+  - name: actions-guide
+    path: ./dist/stories
+    routes:
+      - route: retro-actions.cfapps.io
+      - route: actions.cfapps.io
+      - route: action-items.cfapps.io
+      - route: actionitems.cfapps.io
+      - route: actionables.cfapps.io
+      - route: whowhenwhat.cfapps.io
     <<: *defaults
