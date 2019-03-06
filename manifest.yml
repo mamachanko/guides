@@ -56,3 +56,22 @@ applications:
       - route: actionables.cfapps.io
       - route: whowhenwhat.cfapps.io
     <<: *defaults
+
+  - name: remoting-guide
+    path: ./dist/remoting
+    routes:
+      - route: remoting.cfapps.io
+      - route: remote-teams.cfapps.io
+      - route: remote-collaboration.cfapps.io
+      - route: remote-pairing.cfapps.io
+      - route: remote-pair-programming.cfapps.io
+      - route: remote-mob-programming.cfapps.io
+      - route: remote-mobing.cfapps.io
+    <<: *defaults
+
+  - name: git-guide
+    path: ./dist/git
+    routes:
+      - route: gitgit.cfapps.io
+      - route: gitvcs.cfapps.io
+    <<: *defaults

@@ -24,9 +24,21 @@ Pair and mob programming eliminates the the majority of [wastes in software deve
  * knowledge loss
  * ineffective communication 
 
+## Learning to collaborate by mob programming
+
+you learn very good collaboration etiquette and skills when mobbing
+switching to pairing comes natural, the other way around doesn't
+scaling down works
+scaling up seldomly
+having an impact on a team is "easier" in a mob
+understanding a team is "easier" in mob
+sharing knowledge via rotation is happening "faster" in a mob
+
 ## "But it makes us go so slow"
 (TODO)
 when you feel that it makes you go slow (maybe because of different skill levels and experience), then not pairing cannot be the solution 
+
+probably there's only part of all people feeling slowed down, the seniors. they are sharing knowledge.
 
 ## There's more 
  * [Mobbing Cheat Sheet](https://docs.google.com/document/d/1Ve5LVAJvGqJbUZR6C2o3ZNvFPKpuJ6sfIwxlpgKpKCk/export?format=pdf)
